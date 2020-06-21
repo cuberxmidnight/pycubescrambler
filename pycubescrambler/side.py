@@ -150,22 +150,20 @@ def get_pyra():
         tip.append(tips[i])
         tip.append(random.choice(turns))
     elif length==3:
+      choice=random.choice(tips3)
       for i in range(3):
-        choice=random.choice(tips3)
         tip.append(choice[i])
         tip.append(random.choice(turns))
     
     elif length==2:
+      choice=random.choice(tips2)
       for i in range(2):
-        choice=random.choice(tips2)
         tip.append(choice[i])
         tip.append(random.choice(turns))
       
     elif length==1:
       tip.append(random.choice(tips))
       tip.append(random.choice(turns))
-    elif number==0:
-      tip.append("")
     return "".join(tip)
 
 
